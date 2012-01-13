@@ -1,0 +1,81 @@
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\Merriweather.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\Merriweather.pdb
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\EntityFramework.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\Microsoft.Web.Infrastructure.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\Microsoft.Web.Optimization.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\System.Web.Helpers.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\System.Web.Mvc.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\System.Web.Providers.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\System.Web.Razor.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\System.Web.WebPages.Deployment.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\System.Web.WebPages.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\System.Web.WebPages.Razor.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\WebActivator.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\EntityFramework.xml
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\obj\Debug\Merriweather.csprojResolveAssemblyReference.cache
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\obj\Debug\Merriweather.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\obj\Debug\Merriweather.pdb
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\Ninject.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\Ninject.Web.Mvc.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\Ninject.pdb
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\Ninject.xml
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\Ninject.Web.Mvc.pdb
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\Ninject.Web.Mvc.xml
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\ImageResizer.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather\bin\ImageResizer.xml
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\Merriweather.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\Merriweather.pdb
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\EntityFramework.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\ImageResizer.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\Microsoft.Web.Infrastructure.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\Microsoft.Web.Optimization.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\Ninject.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\Ninject.Web.Mvc.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\System.Web.Helpers.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\System.Web.Mvc.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\System.Web.Providers.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\System.Web.Razor.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\System.Web.WebPages.Deployment.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\System.Web.WebPages.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\System.Web.WebPages.Razor.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\WebActivator.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\EntityFramework.xml
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\ImageResizer.xml
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\Ninject.pdb
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\Ninject.xml
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\Ninject.Web.Mvc.pdb
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\Ninject.Web.Mvc.xml
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\obj\Debug\Merriweather.csprojResolveAssemblyReference.cache
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\obj\Debug\Merriweather.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\obj\Debug\Merriweather.pdb
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\Microsoft.Web.Helpers.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\System.Data.SqlServerCe.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather\bin\System.Data.SqlServerCe.Entity.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\Merriweather.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\Merriweather.pdb
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\EntityFramework.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\ImageResizer.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\Microsoft.Web.Helpers.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\Microsoft.Web.Optimization.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\Ninject.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\Ninject.Web.Mvc.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\System.Data.SqlServerCe.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\System.Data.SqlServerCe.Entity.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\System.Web.Helpers.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\System.Web.Mvc.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\System.Web.Providers.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\System.Web.Razor.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\System.Web.WebPages.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\System.Web.WebPages.Razor.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\WebActivator.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\EntityFramework.xml
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\ImageResizer.xml
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\Ninject.pdb
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\Ninject.xml
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\Ninject.Web.Mvc.pdb
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\bin\Ninject.Web.Mvc.xml
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\obj\Debug\Merriweather.csprojResolveAssemblyReference.cache
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\obj\Debug\Merriweather.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather\obj\Debug\Merriweather.pdb

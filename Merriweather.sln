@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{00000000-0000-0000-0000-000000000000}") = "Merriweather", "Merriweather\Merriweather.csproj", "{30160604-04A8-4D75-9624-991B5C42F9AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merriweather.Tests", "Merriweather.Tests\Merriweather.Tests.csproj", "{5D44487B-E294-4F17-8C07-DF7B5FCCF6F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30160604-04A8-4D75-9624-991B5C42F9AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30160604-04A8-4D75-9624-991B5C42F9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30160604-04A8-4D75-9624-991B5C42F9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30160604-04A8-4D75-9624-991B5C42F9AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D44487B-E294-4F17-8C07-DF7B5FCCF6F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D44487B-E294-4F17-8C07-DF7B5FCCF6F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D44487B-E294-4F17-8C07-DF7B5FCCF6F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D44487B-E294-4F17-8C07-DF7B5FCCF6F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

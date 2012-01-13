@@ -1,0 +1,10 @@
+﻿@model MvcMusicStore.Models.Artist
+
+@{
+    ViewBag.Title = "ViewPage1";
+}
+
+<h2>@Model.Name</h2>
+<img src="@Url.Content("~/Content/uploads" + Model.Picture)" alt="@Model.Name" />
+@Html.Raw(HttpUtility.HtmlDecode(Model.Article))
+

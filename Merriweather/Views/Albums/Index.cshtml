@@ -1,0 +1,107 @@
+@model IEnumerable<Merriweather.Models.Album>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            Genre
+        </th>
+        <th>
+            OrderDetails
+        </th>
+        <th>
+            Band
+        </th>
+        <th>
+            Songs
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Title
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            Heading
+        </th>
+        <th>
+            PictureUrl
+        </th>
+        <th>
+            LiveDate
+        </th>
+        <th>
+            PlaylistPicture
+        </th>
+        <th>
+            Article
+        </th>
+        <th>
+            Gemm
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+        <td>
+			@(item.Genre == null ? "None" : item.Genre.Name)
+        </td>
+        <td>
+			@(item.OrderDetails == null ? "None" : item.OrderDetails.Count.ToString())
+        </td>
+        <td>
+			@(item.Band == null ? "None" : item.Band.Name)
+        </td>
+        <td>
+			@(item.Songs == null ? "None" : item.Songs.Count.ToString())
+        </td>
+        <td>
+			@item.Name
+        </td>
+        <td>
+			@item.Title
+        </td>
+        <td>
+			@String.Format("{0:F}", item.Price)
+        </td>
+        <td>
+			@item.Heading
+        </td>
+        <td>
+			@item.PictureUrl
+        </td>
+        <td>
+			@String.Format("{0:g}", item.LiveDate)
+        </td>
+        <td>
+			@item.PlaylistPicture
+        </td>
+        <td>
+			@item.Article
+        </td>
+        <td>
+			@item.Gemm
+        </td>
+    </tr>
+}
+
+</table>
+
+

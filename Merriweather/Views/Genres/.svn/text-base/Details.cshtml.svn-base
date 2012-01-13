@@ -1,0 +1,27 @@
+@model MvcMusicStore.Models.Genre
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Genre</legend>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name</div>
+
+    <div class="display-label">Description</div>
+    <div class="display-field">@Model.Description</div>
+
+    <div class="display-label">Albums</div>
+    <div class="display-field">@(Model.Albums == null ? "None" : Model.Albums.Count.ToString())</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.GenreId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

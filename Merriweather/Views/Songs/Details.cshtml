@@ -1,0 +1,26 @@
+@model MvcMusicStore.Models.Song
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Song</legend>
+
+    <div class="display-label">Album</div>
+    <div class="display-field">@(Model.Album == null ? "None" : Model.Album.Name)</div>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name</div>
+
+    <div class="display-label">Href</div>
+    <div class="display-field">@Model.Href</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

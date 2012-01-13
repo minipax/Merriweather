@@ -1,0 +1,28 @@
+@model Merriweather.Models.Artist
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@Model.Name</h2>
+
+<fieldset>
+    <legend>Artist</legend>
+
+    
+    <div class="display-field"></div>
+    
+    <div class="display-field"><a href="@Model.WebPageUrl"></a></div>
+</fieldset>
+<div style="float: right">
+    <img src="/Content/uploads/@Model.ImageUrl" alt=""/>
+</div>
+  <div class="display-field">@Html.Raw(Model.Article)</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index") |
+    <a href="mailto:@Model.Email">Email</a> |
+    @Html.ActionLink("Index", "Bands", string.Format("Bands: {0}",  (Model.Bands == null ? "None" : Model.Bands.Count.ToString())))
+</p>
+
+

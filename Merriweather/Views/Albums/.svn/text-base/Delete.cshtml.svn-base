@@ -1,0 +1,62 @@
+@model MvcMusicStore.Models.Album
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Album</legend>
+
+    <div class="display-label">Genre</div>
+    <div class="display-field">@(Model.Genre == null ? "None" : Model.Genre.Name)</div>
+
+    <div class="display-label">OrderDetails</div>
+    <div class="display-field">@(Model.OrderDetails == null ? "None" : Model.OrderDetails.Count.ToString())</div>
+
+    <div class="display-label">Band</div>
+    <div class="display-field">@(Model.Band == null ? "None" : Model.Band.Name)</div>
+
+    <div class="display-label">Songs</div>
+    <div class="display-field">@(Model.Songs == null ? "None" : Model.Songs.Count.ToString())</div>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name</div>
+
+    <div class="display-label">Title</div>
+    <div class="display-field">@Model.Title</div>
+
+    <div class="display-label">Price</div>
+    <div class="display-field">@String.Format("{0:F}", Model.Price)</div>
+
+    <div class="display-label">AlbumArtUrl</div>
+    <div class="display-field">@Model.AlbumArtUrl</div>
+
+    <div class="display-label">Heading</div>
+    <div class="display-field">@Model.Heading</div>
+
+    <div class="display-label">PictureUrl</div>
+    <div class="display-field">@Model.PictureUrl</div>
+
+    <div class="display-label">LiveDate</div>
+    <div class="display-field">@String.Format("{0:g}", Model.LiveDate)</div>
+
+    <div class="display-label">PlaylistPicture</div>
+    <div class="display-field">@Model.PlaylistPicture</div>
+
+    <div class="display-label">Article</div>
+    <div class="display-field">@Model.Article</div>
+
+    <div class="display-label">Gemm</div>
+    <div class="display-field">@Model.Gemm</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

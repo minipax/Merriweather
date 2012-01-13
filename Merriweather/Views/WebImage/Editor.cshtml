@@ -1,0 +1,24 @@
+﻿@model Merriweather.Models.EditorInputModel
+
+@{
+    ViewBag.Title = "Editor";
+}
+@section HeaderSection
+{
+    <link href="@Url.Content("~/Content/jquery.Jcrop.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery.Jcrop.js")" type="text/javascript"></script>
+}
+<h2>Editor</h2>
+<div id="mainform">
+@using(Html.BeginForm("Edit","WebImage", FormMethod.Post))
+{
+    @Html.EditorFor(x=>x.Image.ImageUrl)
+    
+    @Html.HiddenFor(x=>x.Left)
+    @Html.HiddenFor(x=>x.Right)
+    @Html.HiddenFor(x=>x.Top)
+    @Html.HiddenFor(x=>x.Bottom)
+    @Html.HiddenFor(x => x.Image.ImageUrl)
+    <input type='submit' name='action' value='Crop' />
+}
+</div>

@@ -1,0 +1,51 @@
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\bin\Debug\Merriweather.Tests.dll.config
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\bin\Debug\Merriweather.Tests.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\bin\Debug\Merriweather.Tests.pdb
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\bin\Debug\Merriweather.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\bin\Debug\Merriweather.pdb
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\obj\Debug\Merriweather.Tests.csprojResolveAssemblyReference.cache
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\obj\Debug\Merriweather.Tests.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\obj\Debug\Merriweather.Tests.pdb
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\bin\Debug\EntityFramework.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\bin\Debug\Ninject.Web.Mvc.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\bin\Debug\Ninject.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\bin\Debug\WebActivator.dll
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\bin\Debug\EntityFramework.xml
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\bin\Debug\Ninject.Web.Mvc.pdb
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\bin\Debug\Ninject.Web.Mvc.xml
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\bin\Debug\Ninject.pdb
+f:\documents\visual studio 11\Projects\Merriweather\Merriweather.Tests\bin\Debug\Ninject.xml
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\bin\Debug\Merriweather.Tests.dll.config
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\bin\Debug\Merriweather.Tests.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\bin\Debug\Merriweather.Tests.pdb
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\bin\Debug\Merriweather.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\bin\Debug\EntityFramework.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\bin\Debug\Ninject.Web.Mvc.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\bin\Debug\Ninject.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\bin\Debug\WebActivator.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\bin\Debug\Merriweather.pdb
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\bin\Debug\EntityFramework.xml
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\bin\Debug\Ninject.Web.Mvc.pdb
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\bin\Debug\Ninject.Web.Mvc.xml
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\bin\Debug\Ninject.pdb
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\bin\Debug\Ninject.xml
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\obj\Debug\Merriweather.Tests.csprojResolveAssemblyReference.cache
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\obj\Debug\Merriweather.Tests.dll
+F:\documents\visual studio 11\Projects\Merriweather\Merriweather\Merriweather.Tests\obj\Debug\Merriweather.Tests.pdb
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\bin\Debug\Merriweather.Tests.dll.config
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\bin\Debug\Merriweather.Tests.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\bin\Debug\Merriweather.Tests.pdb
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\bin\Debug\Merriweather.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\bin\Debug\Ninject.Web.Mvc.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\bin\Debug\Ninject.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\bin\Debug\WebActivator.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\bin\Debug\Merriweather.pdb
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\bin\Debug\Ninject.Web.Mvc.pdb
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\bin\Debug\Ninject.Web.Mvc.xml
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\bin\Debug\Ninject.pdb
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\bin\Debug\Ninject.xml
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\obj\Debug\Merriweather.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\obj\Debug\Merriweather.Tests.dll
+C:\Users\Jesse-Naiman\Merriweather\Merriweather.Tests\obj\Debug\Merriweather.Tests.pdb

@@ -1,0 +1,47 @@
+@using MvcMusicStore.Helpers
+@model  MvcMusicStore.ViewModels.BandEditModel
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Band.Name)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Band.Name)
+    @Html.ValidationMessageFor(model => model.Band.Name)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Band.Email)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Band.Email)
+    @Html.ValidationMessageFor(model => model.Band.Email)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Band.Picture)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Band.Picture)
+    @Html.ValidationMessageFor(model => model.Band.Picture)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Band.WebPage)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Band.WebPage)
+    @Html.ValidationMessageFor(model => model.Band.WebPage)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Band.Article)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Band.Article)
+    @Html.ValidationMessageFor(model => model.Band.Article)
+</div>
+<div class="editor-field">
+     @Html.CheckBoxList("ArtistCheckedList", "Id", "Name", Model.ArtistCheckedList, x => x.Id, x => x.Name)
+</div>

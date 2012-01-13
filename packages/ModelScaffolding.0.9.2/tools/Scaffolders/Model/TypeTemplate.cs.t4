@@ -1,0 +1,24 @@
+<#@ Template Language="C#" HostSpecific="True" Inherits="DynamicTransform" #>
+<#@ Output Extension="cs" #>
+<#@ import namespace="System" #>
+<# if (Model.Annotations) {#>
+using System.ComponentModel.DataAnnotations; <#}#>
+
+namespace <#= Model.Namespace #>
+{ 
+	public class <#= Model.TypeName #>
+	{
+<# foreach (var property in Model.Properties) {
+if (Model.Annotations && property.MaxLength > 0) {#>
+		[StringLength(<#= property.MaxLength#>)]
+<#}
+if (Model.Annotations && (property.Type == "string" || property.Type == "System.String") && property.Required) {#>
+		[Required]
+<#}#>
+		public <#= property.Type + (((property.Type != "string" && property.Type != "System.String") && !property.Required) ? "?" : "") 
+#> <#= property.Name#> {get; set;}
+<#if (!string.IsNullOrEmpty(property.Reference)) {#>
+		public virtual <#= string.IsNullOrEmpty(property.ReferenceType) ? property.Reference : property.ReferenceType#> <#= property.Reference#> {get; set;}
+<#}}#>
+	}
+}

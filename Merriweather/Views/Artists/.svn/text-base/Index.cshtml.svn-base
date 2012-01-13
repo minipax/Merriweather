@@ -1,0 +1,59 @@
+@model IEnumerable<MvcMusicStore.Models.Artist>
+
+@{
+    ViewBag.Title = "Artists List Page";
+}
+
+<h2>Artists List Page</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            Name
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            PictureUrl
+        </th>
+        <th>
+            WebPageUrl
+        </th>
+        <th>
+            Bands
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+        <td>
+			@item.Name
+        </td>
+        <td>
+			@item.Email
+        </td>
+        <td>
+			@item.PictureUrl
+        </td>
+        <td>
+			@item.WebPageUrl
+        </td>
+        <td>
+			@(item.Bands == null ? "None" : string.Join(", ", item.Bands.Select(x => x.Name).ToArray()))
+        </td>
+    </tr>
+}
+
+</table>
+
+

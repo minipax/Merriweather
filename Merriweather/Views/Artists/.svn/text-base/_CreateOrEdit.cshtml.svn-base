@@ -1,0 +1,44 @@
+@model MvcMusicStore.Models.Artist
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Name)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Name)
+    @Html.ValidationMessageFor(model => model.Name)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Email)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Email)
+    @Html.ValidationMessageFor(model => model.Email)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.PictureUrl)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.PictureUrl)
+    @Html.ValidationMessageFor(model => model.PictureUrl)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.WebPageUrl)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.WebPageUrl)
+    @Html.ValidationMessageFor(model => model.WebPageUrl)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Article)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Article)
+    @Html.ValidationMessageFor(model => model.Article)
+</div>
+

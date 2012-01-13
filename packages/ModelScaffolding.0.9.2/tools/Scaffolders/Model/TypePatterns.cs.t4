@@ -1,0 +1,6 @@
+﻿default Id Name
+string[50] .*Name .+_name name LastName last_name FirstName first_name Surname surname
+System.DateTime .*Date .+_date date
+int .*Count .+_count count .*Id .*ID .+_id id .*Qty .+_qty qty DisplayOrder display_order
+decimal .*Price .+_price price
+bool Is.+ is_.+ Required required Optional optional

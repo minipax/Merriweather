@@ -1,0 +1,29 @@
+@model Merriweather.ViewModels.BandEditModel
+@{
+    ViewBag.Title = "Create";
+}
+@section HeadContent
+{
+    <script type="text/javascript" src="@Url.Content("~/Scripts/merriweather.artists.js")" ></script>
+}
+<h2>
+    Create</h2>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Band</legend>
+        @Html.Partial("_CreateOrEdit", Model)
+        <div class="editor-field">
+            <div id="artistsInBand"></div>
+        </div>
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+}
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

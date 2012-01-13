@@ -1,0 +1,16 @@
+﻿@model int
+           
+@using (Html.BeginForm("ArtistsInBand", "ArtistsInBands", new { id = Model }))
+{
+    
+    <div class="editor-field">
+        @foreach (var artist in new MvcMusicStore.Models.ArtistRepository().GetAllArtists())
+        {
+            @Html.CheckBox("Artists", artist.Bands == null ? false : artist.Bands.Any(x => x.Id == Model), new { value = artist.Id }) @artist.Name
+        }
+        <p>@Html.ActionLink("Add Artist", "Create", "Artists")</p>
+    </div>
+    <p>
+        <input type="submit" value="Update" />
+    </p>
+} 
