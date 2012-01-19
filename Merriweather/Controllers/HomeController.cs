@@ -29,6 +29,7 @@ namespace Merriweather.Controllers
             return View();
         }
 
+        [Authorize]
         public ActionResult Admin()
         {
             return View("Admin");

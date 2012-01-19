@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "Bands";
+    Layout = "~/Views/Shared/_Admin_Layout.cshtml";
 }
 
 <h2>Bands</h2>
@@ -32,12 +33,13 @@
         </th>
     </tr>
 
-@foreach (var item in Model) {
+@foreach (var item in Model)
+{
     <tr>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
         </td>
         <td>
 			@item.Name
@@ -46,7 +48,7 @@
 			@item.Email
         </td>
         <td>
-			<img src="../../Content/uploads/@item.Picture" alt="@item.Picture" height="50px" />
+			<img src="../../Content/uploads/@item.ImageUrl" alt="@item.ImageUrl" height="50px" />
         </td>
         <td>
 			@item.WebPage

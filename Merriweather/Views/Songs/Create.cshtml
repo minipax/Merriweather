@@ -2,11 +2,17 @@
 
 @{
     ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Admin_Layout.cshtml";
 }
 
+@section HeadContent
+{
+    <script src="@Url.Content("~/Scripts/jquery-asyncUpload-0.1/asyncMusicUpload-0.1.js")"></script>
+}
 <h2>Create</h2>
 
-@using (Html.BeginForm()) {
+@using (Html.BeginForm())
+{
     @Html.ValidationSummary(true)
     <fieldset>
         <legend>Song</legend>

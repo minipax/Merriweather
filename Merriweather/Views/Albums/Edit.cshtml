@@ -2,11 +2,13 @@
 
 @{
     ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Admin_Layout.cshtml";
 }
 
 <h2>Edit</h2>
 
-@using (Html.BeginForm()) {
+@using (Html.BeginForm())
+{
     @Html.ValidationSummary(true)
     <fieldset>
         <legend>Album</legend>

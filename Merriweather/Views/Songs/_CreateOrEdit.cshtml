@@ -11,12 +11,17 @@
     @Html.ValidationMessageFor(model => model.Name)
 </div>
 
-<div class="editor-label">
-    @Html.LabelFor(model => model.Href)
+<div>
+    <aside>Firefox requires .ogg files, while IE and chrome can use .mp3. Convert your audio <a href="http://media.io">here.</a></aside>
+    <input type="file" id="SongUpload" name="SongUpload" />
+    <input type="hidden" id="Href" />
 </div>
-<div class="editor-field">
-    @Html.EditorFor(model => model.Href)
-    @Html.ValidationMessageFor(model => model.Href)
+<br/>
+
+<div>
+    <audio id="audioPreview" controls="controls">
+        
+    </audio>
 </div>
 
 <div class="editor-label">

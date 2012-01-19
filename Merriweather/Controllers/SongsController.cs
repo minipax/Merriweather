@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
+using System.Web.Helpers;
+using System.Web.Hosting;
 using System.Web.Mvc;
 using MvcMusicStore.Models;
 
@@ -107,6 +110,15 @@ namespace MvcMusicStore.Controllers
             songRepository.Save();
 
             return RedirectToAction("Index");
+        }
+
+        public string Upload()
+        {
+            var _uploadsFolder = HostingEnvironment.MapPath("~/Content/music/");
+            var song = Request.Files[0];
+            var filename = Path.GetFileName(song.FileName);
+            song.SaveAs(Path.Combine(_uploadsFolder, filename));
+            return filename;
         }
     }
 }

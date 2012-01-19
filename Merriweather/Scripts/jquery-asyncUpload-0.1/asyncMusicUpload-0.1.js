@@ -1,8 +1,17 @@
 ﻿/// jQuery plugin to add support for SwfUpload
 /// (c) 2008 Steven Sanderson
 
+
 (function($) {
-    $.fn.makeImageAsyncUploader = function(options) {
+     $(function() {
+        $("#SongUpload").makeAsyncMusicUploader({
+            upload_url: "/Songs/Upload", // Important! This isn't a directory, it's a HANDLER such as an ASP.NET MVC action method, or a PHP file, or a Classic ASP file, or an ASP.NET .ASHX handler. The handler should save the file to disk (or database).
+            flash_url: '/Scripts/jquery-asyncUpload-0.1/swfupload.swf',
+            button_image_url: '/Scripts/jquery-asyncUpload-0.1/blankButton.png'
+        });
+    });
+
+    $.fn.makeAsyncMusicUploader = function(options) {
         return this.each(function() {
             // Put in place a new container with a unique ID
             var id = $(this).attr("id");
@@ -11,7 +20,7 @@
             container.append($("<span id='" + id + "_completedMessage'/>"));
             container.append($("<span id='" + id + "_uploading'>Uploading... <input type='button' value='Cancel'/></span>"));
             container.append($("<span id='" + id + "_swf'/>"));
-            container.append($("<input type='hidden' id='ImageUrl' name='ImageUrl' value='_filename'/>"));
+            container.append($("<input type='hidden' id='Href' name='Href' value='_filename'/>"));
             $(this).before(container).remove();
             $("div.ProgressBar", container).hide();
             $("span[id$=_uploading]", container).hide();
@@ -27,7 +36,7 @@
             var defaults = {
                 flash_url: "swfupload.swf",
                 upload_url: "/Home/AsyncUpload",
-                file_size_limit: "3 MB",
+                file_size_limit: "10 MB",
                 file_types: "*.*",
                 file_types_description: "All Files",
                 debug: false,
@@ -52,7 +61,7 @@
                 // Called when upload is beginning (switches controls to uploading state)
                 upload_start_handler: function() {
                     swfu.setButtonDimensions(0, height);
-                    $("input[name$=ImageUrl]", container).val("");
+                    $("input[name$=Href]", container).val("");
                     $("input[name$=_guid]", container).val("");
                     $("div.ProgressBar div", container).css("width", "0px");
                     $("div.ProgressBar", container).show();
@@ -61,17 +70,18 @@
 
                     if (options.disableDuringUpload)
                         $(options.disableDuringUpload).attr("disabled", "disabled");
+                    
                 },
 
                 // Called when upload completed successfully (puts success details into hidden fields)
                 upload_success_handler: function(file, response) {
-                    $("input[name$=ImageUrl]", container).val(file.name);
+                    $("input[name$=Href]", container).val(file.name);
                     $("input[name$=_guid]", container).val(response);
-                    $("span[id$=_completedMessage]", container).html("Uploaded <b>{0}</b> ({1} KB)<br/><img src='/Content/uploads/{2}' alt='' />"
+                    $("span[id$=_completedMessage]", container).html("Uploaded <b>{0}</b> ({1} KB)"
                             .replace("{0}", file.name)
                             .replace("{1}", Math.round(file.size / 1024))
-                            .replace("{2}", file.name)
                     );
+                    addSource($("#audioPreview"), '/Content/music/' + file.name);
                 },
 
                 // Called when upload is finished (either success or failure - reverts controls to non-uploading state)
@@ -116,4 +126,10 @@
                 $("input[name$=_guid]", container).val(options.existingGuid);
         });
     };
+
+    // Adds a source element, and appends it to the audio element, represented  
+   // by elem.  
+    function addSource(elem, path) {  
+        $('<source>').attr('src', path).appendTo(elem);
+    }
 })(jQuery);

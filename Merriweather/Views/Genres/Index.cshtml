@@ -1,8 +1,8 @@
-@model IEnumerable<MvcMusicStore.Models.Genre>
+@model IEnumerable<Merriweather.Models.Genre>
 
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_Admin_Layout.cshtml";
 }
 
 <h2>Index</h2>
@@ -27,9 +27,9 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.GenreId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.GenreId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.GenreId })
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
         </td>
         <td>
 			@item.Name

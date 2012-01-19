@@ -1,1 +1,11 @@
-﻿@Html.TextBox("", ViewData.TemplateInfo.FormattedModelValue, new { @class = "text-box single-line", type = "datetime" })
+﻿@model DateTime?
+@Html.TextBox("",  String.Format("{0:yyyy-MM-dd}", Model.HasValue ? Model : DateTime.Today), new { @class = "dp"})
+    <script  type="text/javascript">
+        $(document).ready(function () {
+            $(".dp").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: 'yy-mm-dd'
+            });
+        });
+</script>  

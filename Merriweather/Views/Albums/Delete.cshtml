@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Admin_Layout.cshtml";
 }
 
 <h2>Delete</h2>
@@ -52,7 +53,8 @@
     <div class="display-label">Gemm</div>
     <div class="display-field">@Model.Gemm</div>
 </fieldset>
-@using (Html.BeginForm()) {
+@using (Html.BeginForm())
+{
     <p>
         <input type="submit" value="Delete" /> |
         @Html.ActionLink("Back to List", "Index")

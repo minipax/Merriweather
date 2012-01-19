@@ -1,13 +1,13 @@
 ﻿@model String
 
 <input type="file" id="ImageUrlUpload" name="ImageUrlUpload" />
+<div id="preview"></div>
 <script type="text/javascript">
     $(function() {
-        $("#ImageUrlUpload").makeAsyncUploader({
+        $("#ImageUrlUpload").makeImageAsyncUploader({
             upload_url: "/WebImage/AsyncUpload", // Important! This isn't a directory, it's a HANDLER such as an ASP.NET MVC action method, or a PHP file, or a Classic ASP file, or an ASP.NET .ASHX handler. The handler should save the file to disk (or database).
             flash_url: '/Scripts/jquery-asyncUpload-0.1/swfupload.swf',
             button_image_url: '/Scripts/jquery-asyncUpload-0.1/blankButton.png'
-            
         });
     });
 </script>

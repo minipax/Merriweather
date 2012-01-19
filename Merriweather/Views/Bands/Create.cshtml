@@ -1,13 +1,21 @@
 @model Merriweather.ViewModels.BandEditModel
 @{
     ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Admin_Layout.cshtml";
 }
 @section HeadContent
 {
-    <script type="text/javascript" src="@Url.Content("~/Scripts/merriweather.artists.js")" ></script>
+    <script  type="text/javascript">
+        $(document).ready(function () {
+            $(".dp").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: 'yy-mm-dd'
+            });
+        });
+</script> 
 }
-<h2>
-    Create</h2>
+<h2>Create Band</h2>
 @using (Html.BeginForm())
 {
     @Html.ValidationSummary(true)
@@ -19,11 +27,12 @@
         </div>
         <p>
             <input type="submit" value="Create" />
+            
+
         </p>
     </fieldset>
 }
 
-}
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>

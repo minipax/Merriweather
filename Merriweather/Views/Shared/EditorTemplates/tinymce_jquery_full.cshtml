@@ -11,7 +11,7 @@ Don't forget to reference the JQuery Library here, inside your view or layout.
 
       $(function() { 
       
-          $('#@ViewData.TemplateInfo.GetFullHtmlFieldName(string.Empty)').tinymce({
+          $('#@ViewData.TemplateInfo.GetFullHtmlFieldId(string.Empty)').tinymce({
 
             // Location of TinyMCE script
             script_url: '@Url.Content("~/Scripts/tinymce.3.4.5/tiny_mce.js")',
@@ -33,7 +33,7 @@ Don't forget to reference the JQuery Library here, inside your view or layout.
             theme_advanced_resizing : false,
             
             // Example content CSS (should be your site CSS)
-            content_css : "@Url.Content("~/Content/Site.css")",
+            //content_css : '@Url.Content("~/Content/Site.css")',
             convert_urls : false,
             
             // Drop lists for link/image/media/template dialogs

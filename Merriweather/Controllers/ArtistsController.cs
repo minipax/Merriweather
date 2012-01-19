@@ -20,7 +20,7 @@ namespace Merriweather.Controllers
 
         //
         // GET: /Artist/
-
+        [Authorize]
         public ViewResult Index()
         {
             return View(artistRepository.GetAllArtists(artist => artist.Bands));

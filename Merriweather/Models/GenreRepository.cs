@@ -29,7 +29,7 @@ namespace MvcMusicStore.Models
 
         public void InsertOrUpdate(Genre genre)
         {
-            if (genre.GenreId == default(int)) {
+            if (genre.Id == default(int)) {
                 // New entity
                 context.Genres.Add(genre);
             } else {

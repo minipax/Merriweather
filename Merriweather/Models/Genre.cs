@@ -1,13 +1,12 @@
 using System.Collections.Generic;
-using Merriweather.Models;
 
-namespace MvcMusicStore.Models
+namespace Merriweather.Models
 {
-    public partial class Genre
+    public class Genre
     {
-        public int      GenreId     { get; set; }
+        public int      Id     { get; set; }
         public string   Name        { get; set; }
         public string   Description { get; set; }
-        public List<Album> Albums   { get; set; }
+        public virtual List<Album> Albums   { get; set; }
     }
 }

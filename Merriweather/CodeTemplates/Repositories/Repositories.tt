@@ -1,0 +1,130 @@
+﻿<#@ include file="SQLServer.ttinclude" #>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+using SubSonic.DataProviders;
+using SubSonic.Extensions;
+using System.Linq.Expressions;
+using SubSonic.Schema;
+using System.Collections;
+using SubSonic;
+using SubSonic.Repository;
+using System.ComponentModel;
+using System.Data.Common;
+using Web.Infrastructure.Storage;
+using Merriweather.Universal;
+
+namespace <#=Namespace #>
+{
+<#
+
+    var tables = LoadTables();
+
+    foreach(Table tbl in tables)
+    {
+	    if(!ExcludeTables.Contains(tbl.Name ))
+        {
+			if(tbl.ClassName != "AlbumArtist")
+				{
+			var modelName = tbl.ClassName + "Model";
+			var repositoryName = tbl.ClassName + "Repository";
+#>
+    
+    
+    /// <summary>
+    /// A class which represents the <#=repositoryName #> table in the <#=DatabaseName#> Database.
+    /// </summary>
+    public partial class <#=repositoryName#>
+    {
+		private static ISession _session;
+        public <#=repositoryName#>(ISession session)
+		{
+			if(_session == null)
+				_session = session;
+		}
+        
+		private IEnumerable<<#=modelName#>> _<#=modelName#>s;
+        protected IEnumerable<<#=modelName#>> <#=modelName#>s
+		{
+			get{ 
+			if(_<#=modelName#>s== null)
+				_<#=modelName#>s= _session.All<<#=tbl.ClassName#>>().ConvertToObject<IEnumerable<<#=modelName#>>>();
+			return _<#=modelName#>s;}
+			set{
+				_<#=modelName#>s =value;
+				}
+		}
+        
+        public <#=modelName#> SingleOrDefault(Func<<#=modelName#>, bool> expression) {
+
+            var result = All().Single(expression);
+
+            return result;
+        }      
+         
+        public bool Exists(Func<<#=modelName#>, bool> expression) {
+           
+            return All().Any(expression);
+        }        
+
+        public IList<<#=modelName#>> Find(Func<<#=modelName#>, bool> expression) {
+            return All().Where(expression).ToList();
+        }
+		
+        public IEnumerable<<#=modelName#>> All() {
+            return <#=modelName#>s;
+        }
+        
+        public void Update(){
+            _session.CommitChanges();
+			_session = null;
+        }
+		
+       
+        public void Add(<#=modelName#> model){
+
+<#if(tbl.Columns.Any(x=>x.Name=="CreatedOn")){#>
+            
+            model.CreatedOn=DateTime.Now;
+<#}#>
+<#if(tbl.Columns.Any(x=>x.Name=="CreatedBy")){#>
+            if(String.IsNullOrEmpty(this.CreatedBy))
+                model.CreatedBy=Environment.UserName;
+<#}#>
+<#if(tbl.Columns.Any(x=>x.Name=="ModifiedOn")){#>
+            model=DateTime.Now;
+<#}#>
+<#if(tbl.Columns.Any(x=>x.Name=="ModifiedBy")){#>
+            if(String.IsNullOrEmpty(this.ModifiedBy))
+                model=Environment.UserName;
+<#}#>
+            
+            _session.Add(model);
+        }
+
+		public void Edit(<#=modelName#> model)
+		{
+			var record = _session.Single<<#=tbl.ClassName#>>(x=>x.Id == model.Id);
+			record.Update(model);
+			_session.CommitChanges();
+		}
+
+        public void Delete(<#=modelName#> model) {
+            _session.Delete(model);
+        }
+
+
+
+        public  void Delete(Expression<Func<<#=tbl.ClassName#>, bool>> expression) {
+            
+            _session.Delete<<#=tbl.ClassName#>>(expression);
+        }
+
+     }
+<#        }
+    }
+	}
+#>
+}

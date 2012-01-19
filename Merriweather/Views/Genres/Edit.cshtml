@@ -1,12 +1,14 @@
-@model MvcMusicStore.Models.Genre
+@model Merriweather.Models.Genre
 
 @{
     ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Admin_Layout.cshtml";
 }
 
 <h2>Edit</h2>
 
-@using (Html.BeginForm()) {
+@using (Html.BeginForm())
+{
     @Html.ValidationSummary(true)
     <fieldset>
         <legend>Genre</legend>

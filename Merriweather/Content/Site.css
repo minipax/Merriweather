@@ -358,7 +358,8 @@ fieldset {
             border: 1px solid #7ac0da;
         }
     
-    fieldset input[type="submit"] {
+    fieldset input[type="submit"],
+    fieldset input[type="file"] {
         background-color: #d3dce0;
         border: solid 1px #787878;
         cursor: pointer;
